@@ -11,15 +11,19 @@ Haar Cascade for face detection
 LBPH (Local Binary Patterns Histogram) for face recognition
 
 🗂️ Project Structure
-
+'''
 face-recognition-model/
-├── data/                  # Collected face images per person
-│   └── Person_Name/
-├── models/                # Trained LBPH model and label mappings
-├── Computer_vision_part1.ipynb   # Face image dataset collection
-├── Face_recognition Part2.ipynb  # Model training + real-time recognition
-├── requirements.txt       # Python dependencies
-└── README.md              # Project documentation
+├── data/                         # Collected face images per person
+│   └── Person_Name/              # Example: data/Kartik/
+├── models/                       # Trained model and label encodings
+│   ├── lbph_model.xml
+│   └── label_encoder.pkl
+├── Computer_vision_part1.ipynb   # Notebook for image collection
+├── Face_recognition Part2.ipynb  # Notebook for training and recognition
+├── requirements.txt              # Python dependencies
+└── README.md                     # Project documentation 
+'''
+
 
 🔧 Features
 📷 Capture face images for training via webcam
