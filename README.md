@@ -1,75 +1,108 @@
-👁️‍🗨️ Face Recognition System using OpenCV
-A complete Computer Vision pipeline for real-time face recognition using OpenCV and Python. This project includes image dataset collection, model training using LBPH algorithm, and real-time face recognition from webcam feed.
 
-🧠 Overview
-This repository demonstrates a step-by-step approach to building a face recognition system using:
+# 👁️ Face Recognition System using OpenCV
 
-OpenCV for image handling and webcam capture
+A Computer Vision project to recognize human faces using OpenCV in real-time. The system supports image collection, model training using the LBPH algorithm, and live face recognition via webcam.
 
-Haar Cascade for face detection
+---
 
-LBPH (Local Binary Patterns Histogram) for face recognition
+## 📁 Project Structure
 
-🗂️ Project Structure
-'''
+```
 face-recognition-model/
 ├── data/                         # Collected face images per person
-│   └── Person_Name/              # Example: data/Kartik/
+│   └── Person_Name/              
 ├── models/                       # Trained model and label encodings
 │   ├── lbph_model.xml
 │   └── label_encoder.pkl
 ├── Computer_vision_part1.ipynb   # Notebook for image collection
 ├── Face_recognition Part2.ipynb  # Notebook for training and recognition
 ├── requirements.txt              # Python dependencies
-└── README.md                     # Project documentation 
-'''
+└── README.md                     # Project documentation
+```
 
+---
 
-🔧 Features
-📷 Capture face images for training via webcam
+## 🚀 Features
 
-👨‍🏫 Train a face recognizer using LBPH algorithm
+- 🧠 Face detection using Haar Cascades  
+- 🔍 Face recognition using LBPH (Local Binary Patterns Histograms)  
+- 📷 Real-time webcam-based recognition  
+- 📁 Save and reload trained models  
 
-🎯 Real-time face detection and recognition
+---
 
-🧱 Modular design with clean code separation
+## 🔧 Getting Started
 
-🚀 Getting Started
-1. Clone the repository
+### 1. Clone the Repository
+
+```bash
 git clone https://github.com/<your-username>/face-recognition-model.git
 cd face-recognition-model
+```
 
-3. Install dependencies
+### 2. Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
-4. Collect training images
-Open the notebook:
+### 3. Collect Face Images
+
+Run the notebook:
+
+```bash
 Computer_vision_part1.ipynb
+```
 
-Capture multiple images (suggested: 50–100 per person)
+- Enter the name of the person
+- Collect ~50 images using webcam
 
-4. Train the model
+### 4. Train the Model
+
+Run the notebook:
+
+```bash
 Face_recognition Part2.ipynb
+```
 
-Trains the LBPH face recognizer
+- This will train the LBPH model
+- Saves the model and label encoder
 
-Saves model file (e.g., lbph_model.xml) and label encoding
+### 5. Run Real-Time Recognition
 
-🧰 Tech Stack
-Python 3.x
+Continue in the same notebook to launch webcam recognition.  
+It will detect and label known faces live.
 
-OpenCV (opencv-contrib-python)
+---
 
-NumPy
+## 🧰 Tech Stack
 
-Pickle (for label encoding)
+- Python 3.x  
+- OpenCV (opencv-contrib-python)  
+- NumPy  
+- Pickle (for label encoding)
 
-📁 Requirements
+---
+
+## 📄 requirements.txt
+
+```
 opencv-contrib-python
 numpy
-✅ Future Enhancements
-Add deep face embeddings (FaceNet, Dlib, ArcFace)
+```
 
-Replace notebook interface with Streamlit or Flask app
+---
 
-Improve accuracy with image preprocessing
+## 📌 Future Improvements
+
+- Replace LBPH with FaceNet or Dlib embeddings  
+- Add GUI using Streamlit or Flask  
+- Store training data in cloud or database  
+
+---
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
