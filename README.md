@@ -6,19 +6,19 @@ A Computer Vision project to recognize human faces using OpenCV in real-time. Th
 ---
 
 ## 📁 Project Structure
-
 ```
 face-recognition-model/
-├── data/                         # Collected face images per person
-│   └── Person_Name/              
-├── models/                       # Trained model and label encodings
-│   ├── lbph_model.xml
-│   └── label_encoder.pkl
-├── Computer_vision_part1.ipynb   # Notebook for image collection
-├── Face_recognition Part2.ipynb  # Notebook for training and recognition
-├── requirements.txt              # Python dependencies
-└── README.md                     # Project documentation
+├── data/ # Collected face images per person
+│ └── Person_Name/ 
+├── models/ # Trained model and label encodings
+│ ├── lbph_model.xml
+│ └── label_encoder.pkl
+├── Computer_vision_part1.ipynb # Notebook for image collection
+├── Face_recognition Part2.ipynb # Notebook for training and recognition
+├── requirements.txt # Python dependencies
+└── README.md # Project documentation
 ```
+
 
 ---
 
